@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang.exe сборка проекта",
+            "command": "C:\\Users\\Fisash\\scoop\\apps\\llvm\\current\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-I${workspaceFolder}\\include",
+                "-L${workspaceFolder}\\lib",
+                "${fileDirname}\\main.c",
+                "${fileDirname}\\glad.c",
+                "-o",
+                "${fileDirname}\\output.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "ня"
+        }
+    ]
+}
